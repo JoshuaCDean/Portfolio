@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Montserrat&display=swap');
+
+:root {
+    /* Variables */
+    --primary-color: ;
+    --secondary-color: ;
+    --accent1-color: ;
+    --accent2-color: ;
+    --heading-font: 'Edu SA Beginner', cursive;
+    --paragraph-font: 'Montserrat', sans-serif;
+    
+}
+
+
+/* STANDARD STYLING */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
