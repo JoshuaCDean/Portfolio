@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Joshua Dean's Portfolio Homepage">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio Home</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -14,37 +15,82 @@
 <body>
     <div id="page-container">
         <div id="content-container">
-            <header>
+            <header id="headFind">
                 <div id="info-header">
-
+                    <picture>
+                        <img src="" alt="Portfolio Logo">
+                    </picture>
                 </div>
 
                 <div id="social-box">
 
                 </div>
 
-                <nav>
-                    <div id="burgerBox">
-                        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-                        <ul id="hamburgerNav">
-                            <li class="active"><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="portfolio.html">PORTFOLIO</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </div>
-
-                    <div id="large-nav">
-                        <a class="active" href="index.html">HOME</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="portfolio.html">PORTFOLIO</a>
-                        <a href="contact.html">CONTACT</a>
-                    </div>
-                </nav>
+                <button id="hamburgerBtn"><span id="navCheck">&#9776;</span><span>X</span></button>
             </header>
+
+            <nav>
+                <div id="burgerBox">
+                    <ul id="hamburgerNav">
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div id="large-nav">
+                    <a class="active" href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </nav>
 
             <main>
 
+                <div class="view-chooser">
+                    <button><i class="fa">&#xf10b;</i></button>
+                    <button><i class="fa">&#xf109;</i></button>
+                    <button><i class="fa">&#xf108;</i></button>
+                </div>
+
+                <div class="small-hero">
+                    <picture>
+                        <img src="images/placeholder.png" alt="placeholder">
+                    </picture>
+                </div>
+
+                <div class="slideshow-container">
+                
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/placeholder.png" alt="placeholder">
+                      <div class="text">Caption Text</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/placeholder.png" alt="placeholder">
+                      <div class="text">Caption Two</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/placeholder.png" alt="placeholder">
+                      <div class="text">Caption Three</div>
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </main>
         </div>
 
@@ -54,7 +100,7 @@
                         <a href="index.html"><h2> Joshua Dean's Portfolio</h2></a>
                     </div>
                     <div id="contact-info">
-                        <h3>Contact Information</h3>
+                        <a href="contact.html"><h3>Contact Information</h3></a>
                         <p>Phone: (620)-313-1432</p>
                         <a href="contact.html">Email: jdeanchurchill@gmail.com</a>
                         <a href="about.html">About</a>
