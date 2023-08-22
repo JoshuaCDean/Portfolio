@@ -1,7 +1,7 @@
 @media only screen and (min-width: 35rem) {
     /* PAGE STYLING */
     #page-container {
-        max-width: 60rem;
+        max-width: 100%;
     }
 
     /* Navigation */
@@ -11,6 +11,7 @@
         border-radius: 0px;
         margin: 0px;
         width: 100%;
+        max-width: 100%;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         padding: 15px;
@@ -70,6 +71,23 @@
     {
         margin: 50px auto;
         width: 500px;
+    }
+
+    #hover-info h2
+    {
+        font-size: x-large;
+        margin: 5px;
+    }
+
+    #hover-info h3
+    {
+        font-size: larger;
+        margin: 5px;
+    }
+
+    #hover-info p
+    {
+        padding:100px;
     }
 
     /* PROJECT PAGE */

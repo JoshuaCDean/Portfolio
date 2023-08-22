@@ -57,9 +57,10 @@ body {
 header
 {
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 95%;
     padding: 5px;
-    margin: auto;
+    margin:  5px auto;
+    margin-bottom: 0px;
     background-color: var(--accent-color);
     display: flex;
     justify-content: space-between;
@@ -125,7 +126,7 @@ nav ul
 {
     background-color: var(--accent-color);
     margin: auto;
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
     display: none;
     padding: 5px;
@@ -293,7 +294,7 @@ nav ul
 .inactive { display: none;}
 #about-div
 {
-    width: 100%;
+    width: 90%;
     margin: 30px auto;
     position:relative;
 }
@@ -301,7 +302,6 @@ nav ul
 #hover-image
 {
     width: 100%;
-    height: 100%;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -309,16 +309,32 @@ nav ul
 #hover-info
 {
     width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     display: none;
+    margin: auto;
+}
+
+#hover-info h2
+{
+    font-size: large;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hover-info h3
+{
+    font-size: medium;
+    margin: 0px;
+    padding: 0px;
 }
 
 #hover-info p
 {
-    padding: 100px;
+    text-align: center ;
+    font-size: small;
     color: white;
+    margin: 0px auto;
     text-shadow: black 1px 1px 5px;
 }
 
@@ -351,7 +367,7 @@ nav ul
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#education-div div
+#education-div div, #experience-div div
 {
     margin: 10px;
     margin-left: 0px;
@@ -387,6 +403,8 @@ nav ul
 {
     margin: 7px;
 }
+
+
 
 #skills-div
 {
@@ -490,7 +508,7 @@ nav ul
     font-family: var(--heading-font);
     font-size: x-large;
     background-color: #fadcdc;
-    padding: 5px;
+    padding: 10px;
     color:black;
     border-radius: 5px;
     border: 1px solid black;
