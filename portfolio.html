@@ -17,12 +17,11 @@
         <div id="content-container">
             <header id="headFind">
                 <div id="info-header">
-                    <picture>
-                        <img src="" alt="Portfolio Logo">
-                    </picture>
+                    <a href="index.html"><img id="logo" src="images/placeholder.png" data-src="images/logo.png" alt="Portfolio Logo"></a>
                 </div>
+
                 <div id="social-box">
-                    <a href="https://www.linkedin.com/in/joshua-dean-7059b7282/"><img src="images/LI-In-Bug.png" alt="Linked In Logo"></a>
+                    <a href="https://www.linkedin.com/in/joshua-dean-7059b7282/"><img src="images/placeholder.png" data-src="images/LI-In-Bug.png" alt="Linked In Logo"></a>
                     <button id="hamburgerBtn"><span id="navCheck">&#9776;</span><span>X</span></button>
                 </div>
             </header>
@@ -38,44 +37,117 @@
                 </div>
 
                 <div id="large-nav">
-                    <a href="index.html">HOME</a>
+                    <a class="left-border" href="index.html">HOME</a>
                     <a href="about.html">ABOUT</a>
                     <a class="active" href="portfolio.html">PORTFOLIO</a>
-                    <a href="contact.html">CONTACT</a>
+                    <a class="right-border" href="contact.html">CONTACT</a>
                 </div>
             </nav>
+
+            <div id="small-banner">
+                <span class="allign-content"> <p>This website has been adjusted for your smaller screen size.</p> <button id="closeBanner">X</button> </span>
+            </div>
 
             <main>
                 <h1>Projects</h1>
                 <hr>
                 <div id="small-portfolio">
-                    <h2>Website</h2>
+                    <h2>Websites</h2>
                     <div class="project-div">
-                        <img src="images/placeholder.png" alt="placeholder" class="project-image"> 
-                        <a href="" class="project-link">Link To Project</a>
-                        <p>Description</p>
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/bountiful-foods.png" alt="Bountiful Foods" class="project-image">
+                        <div class="reveal-transition">
+                            <p>A website for a fresh produce and smoothie seller located in Carlsbad.</p>
+                            <a href="https://joshuacdean.github.io/wdd230/finalProject/index" class="project-link">Bountiful Foods</a>
+                        </div>
                     </div>
 
                     <div class="project-div">
-                        <img src="images/placeholder.png" alt="placeholder" class="project-image"> 
-                        <a href="" class="project-link">Link To Project</a>
-                        <p>Description</p>
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/CCOC.png" alt="Chamber of Commerce" class="project-image">
+                        <div class="reveal-transition">
+                            <p>Chamber of Commerce Website for Coffeyville</p>
+                            <a href="https://joshuacdean.github.io/wdd230/chamber/index.html" class="project-link">Chamber Of Commerce</a>
+                           
+                        </div>
                     </div>
 
                     <div class="project-div">
-                        <img src="images/placeholder.png" alt="placeholder" class="project-image"> 
-                        <a href="" class="project-link">Link To Project</a>
-                        <p>Description</p>
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/Dryoar.png" alt="White River Rafting" class="project-image">
+                        <div class="reveal-transition">
+                            <p>White River Rafting Website</p>
+                            <a href="https://joshuacdean.github.io/wdd130/wwr/index.html" class="project-link">Dry Oar</a>
+                        </div>
                     </div>
 
                     <div class="project-div">
-                        <img src="images/placeholder.png" alt="placeholder" class="project-image"> 
-                        <a href="" class="project-link">Link To Project</a>
-                        <p>Description</p>
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/Writing101.png" alt="Writing101" class="project-image">
+                        <div class="reveal-transition">
+                            <p>A website built as a small place for writers needing ideas for their writing, or want to improve their writing</p>
+                            <a href="https://joshuacdean.github.io/wdd130/writing101/index.html" class="project-link">Writing101</a>
+                        </div>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/CCOC-Design.png" alt="CCOC Design" class="project-image">
+                        <div class="reveal-transition">
+                            <p>The site plan for a Coffeyville Chamber of Commerce</p>
+                            <a href="https://joshuacdean.github.io/wdd230/lesson-3/index.html" class="project-link">COC Siteplan</a>
+                        </div>
+                    </div>
+
+                    <hr id="section-seperate">
+
+                    <h2>Coding and Design Principles</h2>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/design-principles.png" alt="Design Principles" class="project-image">
+                        <div class="reveal-transition">
+                            <p>Three examples and explanations of good design choices from popular websites</p>
+                            <a href="https://joshuacdean.github.io/wdd230/lesson-2/design-principles.html" class="project-link">Design Principles</a>
+                        </div>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/Fetch-api.png" alt="Fetch-api" class="project-image">
+                        <div class="reveal-transition">
+                            <p>A test where all information on the page was fetched from an API of Latter-Day Saints Prophets</p>
+                            <a href="https://joshuacdean.github.io/wdd230/lesson-9/prophets.html" class="project-link">Fetch API</a>
+                        </div>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/weather-api.png" alt="Weather API" class="project-image">
+                        <div class="reveal-transition">
+                            <p>Example of using Open Weather Map's weather API to show current weather information in Fairbanks, Alaska</p>
+                            <a href="https://joshuacdean.github.io/wdd230/lesson-10/weather-api.html" class="project-link">Weather API</a>
+                        </div>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/Lazy-loading.png" alt="Lazy Loading" class="project-image">
+                        <div class="reveal-transition">
+                            <p>An exaggerated example of loading images as they are needed on the page to quicken load times.</p>
+                            <a href="https://joshuacdean.github.io/wdd230/lesson-7/lazyload.html" class="project-link">Lazy Loading</a>
+                        </div>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/Dom-Manipulation.png" alt="Dom Manipulation" class="project-image">
+                        <div class="reveal-transition">
+                            <p>Elementary Example of Basic JavaScript Dom Manipulation</p>
+                            <a href="https://joshuacdean.github.io/wdd230/domManipulation/bom.html" class="project-link">Dom Manipulation</a>
+                        </div>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="images/placeholder.png" data-src="images/portfolio-images/Table-Build.png" alt="Table BUild" class="project-image">
+                        <div class="reveal-transition">
+                            <p>Using the CSS table styling</p>
+                            <a href="https://joshuacdean.github.io/wdd230/lesson-8/tablebuild.html" class="project-link">Table</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="tab-table inactive">
+                <div id="large-portfolio" class="tab-table">
                     <div class="tab">
                         <button class="tablinks tabActive">Website</button>
                         <button class="tablinks">JavaScript</button>
@@ -86,19 +158,9 @@
                     <div id="Website" class="tabcontent reveal-transition">
 
                     </div>
-                    
-                    <div id="JavaScript" class="tabcontent reveal-transition">
-
-                    </div>
-
-                    <div id="C#" class="tabcontent reveal-transition">
-
-                    </div>
-
-                    <div id="Python" class="tabcontent reveal-transition">
-
-                    </div>
                 </div>
+
+                <a href="contact.html" id="port-link">Contact Me</a>
             </main>
         </div>
 

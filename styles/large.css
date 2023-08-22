@@ -1,0 +1,46 @@
+@media only screen and (min-width: 64rem) {
+    /* Page Styling */
+    #page-container
+    {
+        max-width: 100%;
+    }
+
+    /* HEADER AND NAV */
+
+    #large-nav a
+    {
+        padding: 15px;
+    }
+
+    /* HOME */
+
+    /* ABOUT PAGE */
+    #education-div
+    {
+        display: flex;
+    }
+
+    #education-div div
+    {
+        border-left: solid black 1px;
+    }
+
+    #experience-div
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    #experience-div div
+    {
+        padding: 10px;
+        border-left: solid black 1px;
+    }
+    
+    #port-link
+    {
+        font-size: xx-large;
+        padding: 10px;
+    }
+}

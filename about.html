@@ -17,16 +17,13 @@
         <div id="content-container">
             <header id="headFind">
                 <div id="info-header">
-                    <picture>
-                        <img src="" alt="Portfolio Logo">
-                    </picture>
+                    <a href="index.html"><img id="logo" src="images/placeholder.png" data-src="images/logo.png" alt="Portfolio Logo"></a>
                 </div>
 
                 <div id="social-box">
-                    <a href="https://www.linkedin.com/in/joshua-dean-7059b7282/"><img src="images/LI-In-Bug.png" alt="Linked In Logo"></a>
+                    <a href="https://www.linkedin.com/in/joshua-dean-7059b7282/"><img src="images/placeholder.png" data-src="images/LI-In-Bug.png" alt="Linked In Logo"></a>
+                    <button id="hamburgerBtn"><span id="navCheck">&#9776;</span><span>X</span></button>
                 </div>
-
-                <button id="hamburgerBtn"><span id="navCheck">&#9776;</span><span>X</span></button>
             </header>
 
             <nav>
@@ -40,17 +37,21 @@
                 </div>
 
                 <div id="large-nav">
-                    <a  href="index.html">HOME</a>
+                    <a  class="left-border" href="index.html">HOME</a>
                     <a class="active" href="about.html">ABOUT</a>
                     <a href="portfolio.html">PORTFOLIO</a>
-                    <a href="contact.html">CONTACT</a>
+                    <a class="right-border" href="contact.html">CONTACT</a>
                 </div>
             </nav>
+
+            <div id="small-banner">
+                <span class="allign-content"> <p>This website has been adjusted for your smaller screen size.</p> <button id="closeBanner">X</button> </span>
+            </div>
 
             <main>
                 <div id="about-div-container" >
                     <div id="about-div">
-                        <img id="hover-image" src="images/placeholder.png" alt="placeholder">
+                        <img id="hover-image" src="images/placeholder.png" data-src="images/about-page-image.jpg" alt="About Photo">
 
                         <div id="hover-info" class="reveal-transition">
                             <h2>Joshua Dean</h2>
@@ -61,61 +62,74 @@
 
                     </div>
                     
+                    <h2>Education</h2>
+                    <hr>
                     <div id="education-div" class="reveal-transition">
-                        <h2>Education</h2>
-                        <hr>
-                        <span class="allign-content"><p class="title">BYU - Idaho</p>  <p>Anticipated Sept - 2026</p></span>
-                        <p class="qualification">Bachelors Degree In Applied Technology</p>
-                        <ul>
-                            <li>Design and develop all kinds of professional computer programs, domains, web pages, sites, and applications</li>
-                            <li>Configure and resolve issues related to software, network, and security in support of desktop computers</li>
-                            <li>Design and develop rational databases and applications</li>
-                            <li>Install, configure, and troubleshoot network routers, switches, and servers</li>
-                        </ul>
-                        <span class="allign-content"><p class="title">BYU - Idaho</p>  <p>Completed - April 2023</p></span>
-                        <p class="qualification">Certificate In Web & Computer Programming</p>
-                        <ul>
-                            <li>Develop dynamic webpages that are visually appealing and effective that follow industry standards and best practices</li>
-                            <li>Strong problem solving and computer skills</li>
-                            <li>Understanding of HTML, CSS, and JavaScript</li>
-                            <li>Ability to apply web design principles and designs</li>
-                        </ul> 
-                        <span class="allign-content"><p class="title">BYU - Idaho</p> <p>Completed - July 2022</p></span>
-                        <p class="qualification">Pathway Connect Certificate</p>
-                        <ul>
-                            <li>Great interpersonal skills and effective communication</li>
-                            <li>Online teamwork, collaboration, and leadership</li>
-                            <li>Use data and math to make logical decisions</li>
-                            <li>Adapt to different environments and situations quickly and seemlessly</li>
-                        </ul>
+                        <div>
+                            <span class="allign-content"><p class="title">BYU - Idaho</p>  <p>Anticipated Sept - 2026</p></span>
+                            <p class="qualification">Bachelors Degree In Applied Technology</p>
+                            <ul>
+                                <li>Design and develop all kinds of professional computer programs, domains, web pages, sites, and applications</li>
+                                <li>Configure and resolve issues related to software, network, and security in support of desktop computers</li>
+                                <li>Design and develop rational databases and applications</li>
+                                <li>Install, configure, and troubleshoot network routers, switches, and servers</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="allign-content"><p class="title">BYU - Idaho</p>  <p>Completed - April 2023</p></span>
+                            <p class="qualification">Certificate In Web & Computer Programming</p>
+                            <ul>
+                                <li>Develop dynamic webpages that are visually appealing and effective that follow industry standards and best practices</li>
+                                <li>Strong problem solving and computer skills</li>
+                                <li>Understanding of HTML, CSS, and JavaScript</li>
+                                <li>Ability to apply web design principles and designs</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="allign-content"><p class="title">BYU - Idaho</p> <p>Completed - July 2022</p></span>
+                            <p class="qualification">Pathway Connect Certificate</p>
+                            <ul>
+                                <li>Great interpersonal skills and effective communication</li>
+                                <li>Online teamwork, collaboration, and leadership</li>
+                                <li>Use data and math to make logical decisions</li>
+                                <li>Adapt to different environments and situations quickly and seemlessly</li>
+                            </ul>
+                        </div>
                     </div>
 
                     
                     
+                    <h2>Experience</h2>
+                    <hr>
                     <div id="experience-div" class="reveal-transition">
-                        <h2>Experience</h2>
-                        <hr>
-                        <span class="allign-content"><p class="title">Fierra's Aromatics</p> <p>Jan 2017 - Present</p></span>
-                        <p class="qualification">Bottling and Shipping Department Head || Web Developer</p>
-                        <p>Coffeyville, Kansas</p>
-                        <ul>
-                            <li>Built a front-end website, with great user design and experience, leading to more than 30% increase in sales</li>
-                            <li>Lead bottling and shipping departments instituting new protocols leading to decreased costs for shipping, packaging and bottling by 10%</li>
-                            <li>Trained new employees daily, increasing general workplace productivity and effectiveness by 9% and providing a safe and secure workplace environment, helping growth of new employees</li>
-                        </ul>
-                        <span class="allign-content"><p class="title">Premium Retail</p> <p>Sep 2022 - Dec 2022</p> </span>
-                        <p class="qualification">Sales Executive</p>
-                        <p>Coffeyville, Kansas</p>
-                        <ul>
-                            <li>Doubled monthly sales within one month; Tripling sales after only three months</li>
-                            <li>Initiated new customers daily, leading to an increase of customer and overall sales</li>
-                        </ul>
+                        <div>
+                            <span class="allign-content"><p class="title">Fierra's Aromatics</p> <p>Jan 2017 - Present</p></span>
+                            <p class="qualification">Bottling and Shipping Department Head || Web Developer</p>
+                            <p>Coffeyville, Kansas</p>
+                            <ul>
+                                <li>Built a front-end website, with great user design and experience, leading to more than 30% increase in sales</li>
+                                <li>Lead bottling and shipping departments instituting new protocols leading to decreased costs for shipping, packaging and bottling by 10%</li>
+                                <li>Trained new employees daily, increasing general workplace productivity and effectiveness by 9% and providing a safe and secure workplace environment, helping growth of new employees</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <span class="allign-content"><p class="title">Premium Retail</p> <p>Sep 2022 - Dec 2022</p> </span>
+                            <p class="qualification">Sales Executive</p>
+                            <p>Coffeyville, Kansas</p>
+                            <ul>
+                                <li>Doubled monthly sales within one month; Tripling sales after only three months</li>
+                                <li>Initiated new customers daily, leading to an increase of customer and overall sales</li>
+                            </ul>
+                        </div>
                     </div>
 
+                    
+                    <h2>Skills</h2>
+                    <hr>
                     <div id="skills-div" class="reveal-transition">
-                        
-                        <h2>Skills</h2>
-                        <hr>
                         <div class="tab-table">
                             <div class="tab">
                               <button class="tablinks tabActive">Computer</button>

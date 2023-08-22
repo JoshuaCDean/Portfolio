@@ -19,34 +19,29 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 
-/*let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 1;
+if (document.querySelector(".slideshow-container"))
+{
+  showSlides(slideIndex);
+}
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}*/
+}
+
+/* TAB SELECTOR */
 
 function openTab(target, tab)
 {
@@ -66,6 +61,26 @@ function openTab(target, tab)
   target.target.classList.toggle("tabActive");
 }
 
+/* BANNER */
+
+function keepBannerClosed()
+{
+  let newSubmit = parseInt(1);
+  localStorage.setItem("banner-closed", newSubmit);
+  document.querySelector("#small-banner").style.display = "none";
+}
+
+function openBannerFirst()
+{
+  let bannerClosed = window.localStorage.getItem("banner-closed");
+  if (bannerClosed != null)
+  {
+    document.querySelector("#small-banner").style.display = "none";
+  } 
+}
+
+openBannerFirst();
+/* HOVER EVENT LISTENER */
 document.addEventListener('mouseover', (e)=>{
   let tar = e.target.id;
   if (tar == "hover-image")
@@ -78,6 +93,8 @@ document.addEventListener('mouseover', (e)=>{
   }
 });
 
+/* CLICK EVENT LISTENER*/
+
 document.addEventListener('click', function(e) {
   let tar = e.target.id;
   checkToggleOff(tar)
@@ -85,4 +102,53 @@ document.addEventListener('click', function(e) {
   {
     openTab(e, e.target.innerText);
   }
+
+  if (tar == "closeBanner")
+  {
+    keepBannerClosed()
+  }
+
+  if (e.target.classList.contains("prev"))
+  {
+    plusSlides(-1);
+  }
+
+  if (e.target.classList.contains("next"))
+  {
+    plusSlides(1);
+  }
 });
+
+/* LAZY IMAGE LOADING */
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 50px 0px"
+};
+
+const loadImages = (image) => {
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {image.removeAttribute("data-src");};
+};
+
+if("IntersectionObserver" in window) {
+  console.log("In")
+  const imgObserver = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+          if (item.isIntersecting) {
+              loadImages(item.target);
+              observer.unobserve(item.target);
+          }
+      });
+  }, imgOptions);
+
+  imagesToLoad.forEach((img) => {
+      imgObserver.observe(img);
+  });
+} else {
+  console.log("Failed")
+  imagesToLoad.forEach((item) => {
+      loadImages(item);
+  });
+}
