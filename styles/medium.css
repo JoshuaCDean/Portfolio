@@ -51,6 +51,12 @@
         width: 50%;
     }
 
+    #home-about
+    {
+        margin: auto;
+        max-width: 50%;
+    }
+
     #skill-summary
     {
         display: flex;

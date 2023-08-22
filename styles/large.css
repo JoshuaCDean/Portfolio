@@ -43,4 +43,10 @@
         font-size: xx-large;
         padding: 10px;
     }
+
+    /* */
+    #small-banner
+    {
+        display: none;
+    }
 }

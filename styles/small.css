@@ -201,11 +201,14 @@ nav ul
     margin: 15px auto;
     width: fit-content;
     max-width: 100%;
+    padding: 10px;
 }
 
 .small-hero img
 {
     width: 100%;
+    border: solid black 1px;
+    border-radius: 10px;
 }
 
 /* IMAGE SLIDESHOW */
@@ -217,23 +220,25 @@ nav ul
   margin: auto;
   display: none;
 }
+
 .mySlides {
-  display: none;
+    display: none;
+    width: 100%;
 }
 
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
@@ -250,15 +255,6 @@ nav ul
   background-color: rgba(0,0,0,0.8);
 }
 
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 .fade {
   animation-name: fade;
@@ -267,6 +263,7 @@ nav ul
 
 .mySlides img
 {
+    border: 1px solid black;
     width: 100%;
 }
 
@@ -318,6 +315,13 @@ nav ul
     display: none;
 }
 
+#hover-info p
+{
+    padding: 100px;
+    color: white;
+    text-shadow: black 1px 1px 5px;
+}
+
 #hover-info hr
 {
     width: 50%;
@@ -329,8 +333,8 @@ nav ul
 .hover-blur
 {
     
-    filter: blur(0.6em);
-    transition: filter 0.5s;
+    filter: blur(1em) grayscale(100%);
+    transition: filter 1s;
 }
 
 .about-div-button
