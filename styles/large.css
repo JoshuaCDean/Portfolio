@@ -25,6 +25,7 @@
         border-left: solid black 1px;
     }
 
+
     #experience-div
     {
         display: flex;
@@ -35,7 +36,17 @@
         padding: 10px;
         border-left: solid black 1px;
     }
+
+    #experience-div div.left-most
+    {
+        border-left: 0px;
+    }
     
+    #education-div div.left-most
+    {
+        border-left: 0px;
+    }
+
     #port-link
     {
         font-size: xx-large;
